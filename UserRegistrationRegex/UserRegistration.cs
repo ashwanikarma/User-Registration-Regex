@@ -19,5 +19,10 @@ namespace UserRegistrationRegex
         {
             return Regex.IsMatch(LastName, Regex_LastName);
         }
+        public const string Regex_Email = "^[a-zA-Z0-9]+@[a-zA-Z]+.+([co.in|com|in])$";
+        public bool ValidateEmail(string email)
+        {
+            return Regex.IsMatch(email, Regex_Email);
+        }
     }
 }
