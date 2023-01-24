@@ -24,5 +24,10 @@ namespace UserRegistrationRegex
         {
             return Regex.IsMatch(email, Regex_Email);
         }
+        public const string Regex_MobileNumber = "^[0-9]{1,3}[ ][0-9]{10}$";
+        public bool ValidateMobileNumber(string MobNum)
+        {
+            return Regex.IsMatch(MobNum, Regex_MobileNumber);
+        }
     }
 }
