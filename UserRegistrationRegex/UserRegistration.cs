@@ -29,7 +29,7 @@ namespace UserRegistrationRegex
         {
             return Regex.IsMatch(MobNum, Regex_MobileNumber);
         }
-        public const string Regex_password = "^[A-Z]{1}[0-9A-Za-z!@#$%^&*?<>]{8,15}$"; //rule2
+        public const string Regex_password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*?<>]).{6,15}$"; //rule3
         public bool ValidatePassword(string Password)
         {
             return Regex.IsMatch(Password, Regex_password);
