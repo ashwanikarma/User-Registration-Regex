@@ -20,7 +20,9 @@ namespace UserRegistrationRegex
             Console.Write("Enter Your valid Mobile Number : ");
             string mobNum = Console.ReadLine();
             Console.WriteLine(validate1.ValidateMobileNumber(mobNum));
-
+            Console.Write("Enter Your valid Password : ");
+            string password = Console.ReadLine();
+            Console.WriteLine(validate1.ValidatePassword(password));
         }
     }
 }
