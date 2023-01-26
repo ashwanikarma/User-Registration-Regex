@@ -23,6 +23,8 @@ namespace UserRegistrationRegex
             Console.Write("Enter Your valid Password : ");
             string password = Console.ReadLine();
             Console.WriteLine(validate1.ValidatePassword(password));
+            Console.Write("Validating emails");
+            validate1.Test();
         }
     }
 }
