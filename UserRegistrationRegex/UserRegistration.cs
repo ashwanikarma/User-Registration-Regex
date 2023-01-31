@@ -50,6 +50,8 @@ namespace UserRegistrationRegex
             {
                 Console.WriteLine((i + 1) + ". " + invalidEmails[i] + " : " + validate.ValidateEmail(invalidEmails[i]));
             }
+
+
         }
     }
 }
