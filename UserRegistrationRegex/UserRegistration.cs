@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationRegex
 {
-    internal class UserRegistration
+    public class UserRegistration
     {
         public static string REGEX_FIRSTNAME = "^[A-Z]{1}[A-Za-z]{2,}$";
         public bool ValidateFirstName(string firstName)
@@ -52,6 +52,21 @@ namespace UserRegistrationRegex
             }
 
 
+        }
+        public string Email(string email)
+        {
+            Regex regex = new Regex(Regex_Email);
+
+            bool result = regex.IsMatch(email);
+            if (result)
+            {
+                return email;
+            }
+            else
+            {
+                return default;
+            }
+            throw new NotImplementedException();
         }
     }
 }
